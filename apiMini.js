@@ -55,7 +55,7 @@ const updateExchangeRate = async () => {
   let response = await fetch(URL);
   let data = await response.json();
 
-  let rate = data.rates[toCurr.value];  // ✅ correct access
+  let rate = data.rates[toCurr.value];  
 
   let finalAmount = (amtVal * rate).toFixed(2); 
   msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;

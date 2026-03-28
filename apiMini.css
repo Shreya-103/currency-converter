@@ -72,4 +72,5 @@ form button{
 }
 form button:hover{
     background-color: rgb(85, 16, 85);
+    transform: scale(1.1);
 }
